@@ -98,6 +98,7 @@ threeContacts.forEach((celeb)=>{
 buttonAddRandom.addEventListener("click", () => {
   const randomIndex = Math.floor(Math.random() * contacts.length);
     let celeb = contacts[randomIndex];
+    contacts.splice(randomIndex, 1)
     //console.log (newContact);
     const newRow2 = document.createElement("tr");
     newRow2.innerHTML = `
